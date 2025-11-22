@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.javahome</groupId>
@@ -7,43 +9,33 @@
 	<version>8.7.4</version>
 	<name>Java Home myweb</name>
 	<url>http://maven.apache.org</url>
-	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
 		<sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
-
 	</properties>
 	<dependencies>
-
-		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
-	
 	<distributionManagement>
-		 <snapshotRepository>
-		    <id>nexusRepo</id>
-		    <url>http://18.209.221.54:8081/content/repositories/sample-snapshots/</url>
-		 </snapshotRepository>
-		
+		<snapshotRepository>
+			<id>nexusRepo</id>
+			<url>http://18.209.221.54:8081/repository/sample-snapshots/</url>
+		</snapshotRepository>
 		<repository>
-		    <id>mynexusrepo</id>
-		    <url>http://18.209.221.54:8081/content/repositories/mynexusrepo/</url>
+			<id>mynexusrepo</id>
+			<url>http://18.209.221.54:8081/repository/mynexusrepo/</url>
 		</repository>
-  	</distributionManagement>
-	
+	</distributionManagement>
 	<pluginRepositories>
-	    <pluginRepository>    
-		<id>maven1</id>
-		<name>Maven.org</name>
-		<url>http://repo1.maven.org/maven2</url>
-	    </pluginRepository>
+		<pluginRepository>
+			<id>maven1</id>
+			<name>Maven.org</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</pluginRepository>
 	</pluginRepositories>
-
-	
 </project>
